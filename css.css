@@ -1,0 +1,56 @@
+p.text:not(:empty) {
+  color: red;
+}
+
+p.text:empty::after {
+  content: attr(title);
+}
+
+#some_id::before {
+  content: "123";
+  color: red;
+  text-decoration: line-through;
+}
+
+.main-link {
+  color: red;
+  text-decoration: none;
+}
+
+.main-link:hover {
+  color: blue;
+  text-decoration: underline;
+  text-decoration-color: red;
+  cursor: pointer;
+}
+
+.main-link:active {
+  text-decoration: line-through;
+  text-transform: lowercase;
+}
+.main-link:visited {
+  text-decoration: line-through;
+  color: gray;
+}
+
+input:required {
+}
+
+input {
+  color: blue;
+}
+input:focus {
+  color: red;
+}
+
+p.main-link::first-letter {
+  color: brown;
+}
+
+p.main-link::first-line {
+  color: rgb(250, 114, 198);
+}
+
+p:last-of-type {
+  text-decoration: line-through;
+}
